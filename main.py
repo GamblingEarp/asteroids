@@ -3,7 +3,7 @@
 # throughout this file
 import pygame
 from constants import *
-from player import Player
+from player import *
 
 def main():
     pygame.init()
@@ -20,6 +20,7 @@ def main():
         screen.fill("black")
 
         player.draw(screen)
+        player.update(dt)
 
         pygame.display.flip()
 
